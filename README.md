@@ -79,6 +79,11 @@ Injection de res sans sanitize, ni validation de la donnée.
 Il faudrait ajouter un schema de validation de la donnée pour s'assurer de son intégrité. [SchemaValidator](https://github.com/tdegrunt/jsonschema)
 Il faudrait injecter la donnée dans une Factory (Product) afin de s'assurer que l'on manipule toujours la même signature sur ces objets.
 
+Examples : 
+[JsonSchemaValidator.example.js](https://github.com/pierrealbaret/Rakuten-Test-Technique/blob/master/src/JsonSchemaValidator.example.js)
+
+``` node src/src/JsonSchemaValidator.example.js ```
+
 ### Sortir le code redondant, éviter la duplication de code
 ```
     const firstFilterIndex = Settings.filter[category].firstFilter.index
@@ -111,3 +116,8 @@ function getUrlWs(){
 ### Tests unitaires
 Mieux découpé les fonctions, sortir la logique du code et ajouté des prototypages de données afin de pouvoir tester unitairement.
 Afin de se prémunir des changements de contrats d'interface.
+
+Example :
+[FactoryExample.test.js](https://github.com/pierrealbaret/Rakuten-Test-Technique/blob/master/src/FiltersFactoryExample.test.js)
+
+``` yarn test ``` 
