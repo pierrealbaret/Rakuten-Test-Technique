@@ -1,0 +1,85 @@
+.line-through {
+  text-decoration-line: line-through;
+}
+
+.filter_item-link {
+  word-break: break-word;
+  transition: all 0.1s;
+}
+
+.filter-product.grid_col-2 {
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.filter-product-reduction {
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  top: 3px;
+  right: 0;
+  text-align: center;
+  font-weight: 700;
+  background-color: #ffed6b;
+  border-radius: 50%;
+}
+
+.filter-product-img {
+    max-height: 190px;
+}
+
+.filter-product-title {
+  overflow: hidden;
+  line-height: 2rem;
+}
+
+.pagination-product-container {
+  width: 96%;
+  background-color: rgba(240,240,240,0.6);
+  color: #4a4a4a;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.fixed-height-40 {
+  max-height: 4rem;
+  min-height: 4rem;
+}
+
+.filter-product-clubR img{
+  width: 5.5rem;
+}
+
+@media all and (min-width: 576px) {
+  .filter-product-link:hover {
+    transition: all 0.1s;
+    box-shadow: 0px 0px 6px 1px rgba( 0, 0, 0, .1 );
+  }
+  .pagination-product-container:hover p {
+    text-decoration: underline;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .filter-product {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  .filter-product-container-img {
+    width: 100px;
+    height: 100px;
+  }
+  .filter-product-img {
+    width: 100%;
+  }
+  .filter-product-link {
+    align-items: center;
+  }
+  .grid_col-12-BelowLandscape.col_nogutter {
+    max-width: 100%;
+  }
+  .pagination-product-container {
+    width: 100%;
+  }
+}
