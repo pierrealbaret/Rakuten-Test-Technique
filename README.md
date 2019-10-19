@@ -59,10 +59,11 @@ La logique des filtres peut être sorties afin d'aléger le code
 [FiltersFactoryExample](https://github.com/pierrealbaret/Rakuten-Test-Technique/blob/master/src/FiltersFactoryExample.js)
 [FilterFactoryExample](https://github.com/pierrealbaret/Rakuten-Test-Technique/blob/master/src/FilterFactoryExample.js)
 Avec une Factory gérant les collections de filtre, et une Factory gérant les filtres, on peut simplifier le code.
-La factory peut être ré-utiliser pour d'autres filtres
+La factory peut être ré-utiliser pour d'autres filtres.
+
 
 ### Catch l'erreur de wsInitialFilterBuyback
-L'erreur throw par wsInitialFilterBuyback n'est pas catch, ajouté à catch au retour de Promess
+L'erreur throw par wsInitialFilterBuyback n'est pas catch, ajouter un catch au retour de Promess
 
 ### Sanitize, et Prototyper les retours des API
 ```
