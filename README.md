@@ -33,5 +33,7 @@ Functionnally:
 * a user can display additional products
 * interface is responsive and be used on several devices
 
-## Refacto 
+## Proposition
+
+
 
