@@ -58,8 +58,7 @@ De plus en sortant la logique, celle-ci peut être ré-utilisé et testé unitai
 La logique des filtres peut être sorties afin d'aléger le code 
 [FiltersFactoryExample](https://github.com/pierrealbaret/Rakuten-Test-Technique/blob/master/src/FiltersFactoryExample.js)
 [FilterFactoryExample](https://github.com/pierrealbaret/Rakuten-Test-Technique/blob/master/src/FilterFactoryExample.js)
-Avec une Factory gérant les collections de filtre, et une Factory gérant les filtres, on peut simplifier le code est le rendre plus simple à évoluer.
-
+Avec une Factory gérant les collections de filtre, et une Factory gérant les filtres, on peut simplifier le code.
 La factory peut être ré-utiliser pour d'autres filtres
 
 ### Catch l'erreur de wsInitialFilterBuyback
