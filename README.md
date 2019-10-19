@@ -44,7 +44,8 @@ Functionnally:
     "react-scripts": "1.1.4"
   }
 ```  
-Il faudrait fixé les packages afin d'éviter les suprises en production 
+- Il faudrait fixer les packages afin d'éviter les suprises en production 
+- Ajouter un linter (es6 + css)
 
 ### wsFilterBuyback
 - [wsFilterBuyback](https://github.com/pierrealbaret/Rakuten-Test-Technique/blob/master/src/rest/wsFilterBuyback.js) 
@@ -55,11 +56,11 @@ De plus en sortant la logique, celle-ci peut être ré-utilisé et testé unitai
 - [App.js](https://github.com/pierrealbaret/Rakuten-Test-Technique/blob/master/src/components/App.js)
 
 ### Sortir la logique des filtres
-La logique des filtres peut être sorties afin d'aléger le code 
+La logique des filtres peut être sorties afin d'alléger le code 
 [FiltersFactoryExample](https://github.com/pierrealbaret/Rakuten-Test-Technique/blob/master/src/FiltersFactoryExample.js)
 [FilterFactoryExample](https://github.com/pierrealbaret/Rakuten-Test-Technique/blob/master/src/FilterFactoryExample.js)
 Avec une Factory gérant les collections de filtre, et une Factory gérant les filtres, on peut simplifier le code.
-La factory peut être ré-utiliser pour d'autres filtres.
+Ces factories seront réutilisables.
 
 
 ### Catch l'erreur de wsInitialFilterBuyback
@@ -77,14 +78,14 @@ Injection de res sans sanitize, ni validation de la donnée.
 Il faudrait ajouter un schema de validation de la donnée pour s'assurer de son intégrité. [SchemaValidator](https://github.com/tdegrunt/jsonschema)
 Il faudrait injecter la donnée dans une Factory (Product) afin de s'assurer que l'on manipule toujours la même signature sur ces objets.
 
-### Sortir le code redondant
+### Sortir le code redondant, éviter la duplication de code
 ```
     const firstFilterIndex = Settings.filter[category].firstFilter.index
     const secondFilterIndex = Settings.filter[category].secondFilter.index
     const thirdFilterIndex = Settings.filter[category].thirdFilter.index
     const fourthFilterIndex = Settings.filter[category].fourthFilter.index
 ```
-Ces variables sont instanciées à plusieurs reprises, elles peuvent être sorties des fonctions afin de les instanciées une seul fois
+Ces variables sont instanciées à plusieurs reprises, elles peuvent être sorties des fonctions afin de les instancier une seul fois
 
 ### Refactorer le code redondant
 ```
