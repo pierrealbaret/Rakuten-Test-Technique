@@ -46,6 +46,7 @@ Functionnally:
 ```  
 - Il faudrait fixer les packages afin d'éviter les suprises en production 
 - Ajouter un linter (es6 + css) [airbnb-config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
+- Ajout de l'internalisation [intl](https://github.com/formatjs/react-intl)
 
 ### wsFilterBuyback
 - [wsFilterBuyback](https://github.com/pierrealbaret/Rakuten-Test-Technique/blob/master/src/rest/wsFilterBuyback.js) 
