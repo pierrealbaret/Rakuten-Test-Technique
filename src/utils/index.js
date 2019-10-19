@@ -5,10 +5,7 @@ const dataMerchFilters = () => {
     return window.merchFilters
   }
 };
-/**
- * TODO :
- * Devrait être dans la configuration
- */
+
 const settingFilter = {
   "Tel-PDA_Telephones-mobiles":{
     category:"Tel-PDA_Telephones-mobiles",

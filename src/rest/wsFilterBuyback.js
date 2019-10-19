@@ -1,6 +1,5 @@
 import {getUrlWs, Settings} from "../utils"
 
-/** TODO : can be replace by a factory */
 const wsFilterBuyback = (category,brand, model, capacity, color, nextTk, settingFilter) => {
   const filterBrand = brand ? brand : '';
   const filterModel = model ? model : '';
@@ -87,7 +86,6 @@ const wsInitialFilterBuyback = (settingFilter, category) => {
     if(fourthFilterIndex)
     settingFilter.filterValues.push(fourthFilterIndex)
   }
-
   return new Promise(function (resolve, reject) {
     const req = new XMLHttpRequest();
     const URL =  getUrlWs();

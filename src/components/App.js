@@ -5,9 +5,6 @@ import { wsFilterBuyback, wsInitialFilterBuyback } from './../rest/wsFilterBuyba
 import { dataMerchFilters, settingFilter,Settings, topBrand } from './../utils';
 
 export default class Filter extends React.Component {
-  /**
-   * TODO : filters could be a factory (values, isDisable, name, selectedValue)
-   */
   constructor(props) {
     super(props);
     this.state = {
@@ -144,10 +141,6 @@ export default class Filter extends React.Component {
     })
   }
 
-  /**
-   * TODO same as initializeOneFilter but with a condition
-   * @param brand
-   */
   initializeSecondFilter(brand) {
     const {category} = this.state
     const data = settingFilter[category];
@@ -168,9 +161,6 @@ export default class Filter extends React.Component {
   initializeFilter() {
     const data = dataMerchFilters();
     const {category} = this.state
-    /**
-     * TODO: multiple use => could be in context
-     */
     const firstFilterIndex = Settings.filter[category].firstFilter.index
     const secondFilterIndex = Settings.filter[category].secondFilter.index
     const thirdFilterIndex = Settings.filter[category].thirdFilter.index
